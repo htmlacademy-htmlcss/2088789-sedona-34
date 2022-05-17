@@ -1,7 +1,10 @@
 # Личный проект «Седона»
 
 * Студент: [Родион Жердев](https://up.htmlacademy.ru/htmlcss/34/user/2088789).
+
 * Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
+
+
 
 ---
 
