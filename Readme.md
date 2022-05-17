@@ -4,8 +4,6 @@
 
 * Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
 
-
-
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
