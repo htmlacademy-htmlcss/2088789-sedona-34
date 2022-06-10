@@ -337,6 +337,16 @@ catalog-filter-item {
   color: #333333;
 }
 
+nav a {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
 /*Фоны*/
 .main-background {
   background-image: url("images/index/backgrund.jpg");
@@ -366,14 +376,4 @@ catalog-filter-item {
   background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-
-.main-navigation {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: capitalize;
-  color: #000000;
 }
