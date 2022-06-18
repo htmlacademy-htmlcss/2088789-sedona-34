@@ -20,6 +20,36 @@ body {
   font-family: "PT Sans" sans-serif;
   font-size: 22px;
   line-height: 26px;
+  background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-header {
+  width: 1240px;
+  display: flex;
+}
+
+.navigation-link {
+  width: 739px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-user {
+  max-width: 1130px;
+  margin-left: auto;
+}
+
+.navigation-list {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* Тектс */
@@ -375,4 +405,10 @@ nav a {
   background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  flex-grow: 1;
 }
