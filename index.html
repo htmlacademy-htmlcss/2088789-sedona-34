@@ -9,31 +9,34 @@
     <!--Хэдер-->
     <div class="page-container">
       <header class="page-header">
-        <img
-          class="logo"
-          src="images/Vector-svg/logo.svg"
-          widht="139"
-          height="70"
-          alt="Логотип Седоны."
-        />
         <!--Навигация текст-->
         <nav class="main-navigation">
-          <div class="menu-container">
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="index.html">Главная</a>
-              </li>
-              <li><a class="navigation-link" href="#">О Седоне</a></li>
-              <li>
-                <a class="navigation-link" href="catalog.html">Гостиницы</a>
-              </li>
-            </ul>
-          </div>
+          <a href="/" class="logo-link">
+            <img
+              class="logo-image"
+              src="images/Vector-svg/logo.svg"
+              width="139"
+              height="70"
+              alt="Логотип Седоны."
+            />
+          </a>
+
+          <ul class="list nav-list nav-list-menu">
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О Седоне</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
           <!--Навигация иконки-->
-          <div class="user-menu-container">
-            <ul class="navigation-user">
-              <li class="navigation-item">
-                <a class="navigation-item" href="#"></a>
+
+          <ul class="list nav-list nav-list-user">
+            <li class="nav-item">
+              <a class="nav-icon" href="#">
                 <img
                   class="header-icons"
                   src="images/Vector-svg/search.svg"
@@ -41,10 +44,11 @@
                   width="18"
                   height="18"
                 />
-              </li>
+              </a>
+            </li>
 
-              <li>
-                <a class="navigation-item" href="#"></a>
+            <li>
+              <a class="nav-icon" href="#">
                 <img
                   class="social-media-item"
                   src="images/Vector-svg/favorite(1).svg"
@@ -52,30 +56,35 @@
                   width="18"
                   height="17"
                 />
-              </li>
-              <li>
-                <button class="header-button" type="button">Хочу сюда</button>
-              </li>
-            </ul>
-          </div>
+              </a>
+            </li>
+            <li>
+              <button class="nav-button" type="button">Хочу сюда</button>
+            </li>
+          </ul>
         </nav>
       </header>
       <!--Hero-->
       <main class="main-index">
-        <img
-          class="main-text"
-          src="images/Vector-svg/welcome-full.svg"
-          widht="458"
-          height="352"
-          alt="Добро пожаловать."
-        />
-        <img
-          class="main-background"
-          src="images/index/background.jpg"
-          width="1200"
-          height="485"
-          alt="Добро пожаловать."
-        />
+        <section class="hero">
+          <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+
+          <img
+            class="hero-welcome"
+            src="/images/Vector-svg/welcome.svg"
+            width="1200"
+            height="485"
+            alt="Добро пожаловать."
+          />
+
+          <!-- <img
+            class="hero-devider"
+            src="/images/index/divider.svg"
+            width="458"
+            height="352"
+            alt="Добро пожаловать."
+          /> -->
+        </section>
 
         <section class="main-text">
           <h2 class="advantages-title">

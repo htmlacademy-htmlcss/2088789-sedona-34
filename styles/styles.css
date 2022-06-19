@@ -3,59 +3,160 @@
 @font-face {
   font-family: PT Sans;
   font-style: normal;
-  font-weight: 400;
-  src: url("fonts/ptsans-400.woff2");
+  src: url("/fonts/ptsans-400.woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: PT Sans;
   font-style: normal;
-  font: weight 700px;
-  src: url("fonts/ptsans-700.woff2");
+  font-weight: 700;
+  src: url("/fonts/ptsans-700.woff2");
   font-display: swap;
 }
 
-body {
-  font-family: "PT Sans" sans-serif;
-  font-size: 22px;
-  line-height: 26px;
-  background-color: #ffffff;
+html {
+  height: 100%;
   margin: 0;
+}
+
+body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+
+  line-height: 26px;
+  background-color: #ffffff;
 }
 
-main-container {
-  flex-grow: 1;
+* {
+  box-sizing: border-box;
+}
+
+.list {
+  list-style: none;
 }
 
 .page-container {
-  width: 1240px;
+  width: 1200px;
   margin: 0 auto;
   display: block;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 0 70px;
+
+  background-color: #ffffff;
+  color: #000000;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 /* Навигация стили */
 
 .main-navigation {
   display: flex;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
-.logo {
+.logo-link {
   margin-right: 30px;
-  margin-left: 70px;
-  order: -1;
 }
 
-.header-button {
+.logo-image {
+}
+
+.nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-list-menu {
+}
+
+.nav-list-user {
+  margin-left: auto;
+}
+
+.nav-link {
+  margin: 0 17px;
+  color: #000000;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  text-decoration: none;
+  height: 100%;
+}
+
+.nav-icon {
+  width: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link-active {
+  border-bottom: 2px solid #000000;
+}
+
+.nav-button {
+  padding: 8px 15px;
+  margin-left;
   width: 160px;
   height: 37px;
+
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #756157;
   border-radius: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
+
+/* Header END */
+
+/* Hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 485px;
+  background-image:
+    url("/images/Vector-svg/divider.svg"), url("/images/index/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%, 100% 50%;
+}
+
+.hero-welcome {
+  height: 352px;
+  width: 458px;
+  margin: 0 auto;
+}
+
+.hero-devider {
+}
+
+/* Hero END */
 
 /* Приемущества */
 .first-advantages-info {
@@ -71,6 +172,7 @@ main-container {
 .advantages-items {
   max-width: 450px;
   max-height: 384px;
+  list-style: none;
 }
 
 .logo {
@@ -96,11 +198,13 @@ main-container {
   color: #000000;
 }
 
+.social-media-item {
+  list-style: none;
+}
+
 /* Тектс */
 
 .advantages-title {
-  font-family: "PT Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -108,14 +212,9 @@ main-container {
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
-  position: absolute;
 }
 
 .subtitle {
-  position: absolute;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -125,31 +224,7 @@ main-container {
   height: 56px;
 }
 
-.page-header {
-  background-color: #ffffff;
-  color: #000000;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: capitalize;
-}
-
-.navigation-link {
-  color: #000000;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: capitalize;
-  position: absolute;
-}
-
 .advantage-1 {
-  font-family: "PT Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -161,9 +236,6 @@ main-container {
 }
 
 .first-advantages-info span {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -171,9 +243,6 @@ main-container {
 }
 
 .advantage-1 p {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -185,8 +254,7 @@ main-container {
 .advantages-item h3 {
   width: 230px;
   height: 28px;
-  font-family: "PT Sans";
-  font-style: normal;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -198,9 +266,7 @@ main-container {
 .advantages-item p {
   width: 230px;
   height: 63px;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
+
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -208,9 +274,6 @@ main-container {
 }
 
 .advantage-2 p {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -222,9 +285,7 @@ main-container {
 .advantage-2 span {
   width: 230px;
   height: 21px;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
+
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -234,8 +295,7 @@ main-container {
 .advantage-2 h3 {
   width: 230px;
   height: 56px;
-  font-family: "PT Sans";
-  font-style: normal;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -247,8 +307,7 @@ main-container {
 .advantages-item-2 h3 {
   width: 230px;
   height: 28px;
-  font-family: "PT Sans";
-  font-style: normal;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -260,9 +319,7 @@ main-container {
 .advantages-item-2 span {
   width: 230px;
   height: 21px;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
+
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -270,9 +327,6 @@ main-container {
 }
 
 .advantages-item-2 p {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -282,10 +336,8 @@ main-container {
 }
 
 .main-search h2 {
-  position: absolute;
   color: #000000;
-  font-family: "PT Sans";
-  font-style: normal;
+
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -294,10 +346,6 @@ main-container {
 }
 
 .main-search p {
-  position: absolute;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -305,9 +353,6 @@ main-container {
 }
 
 .main-sub h2 {
-  position: absolute;
-  font-family: "PT Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -316,10 +361,6 @@ main-container {
 }
 
 .main-sub p {
-  position: absolute;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -327,10 +368,6 @@ main-container {
 }
 
 .contacts-phone {
-  position: absolute;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -339,30 +376,22 @@ main-container {
 }
 
 .inner-header-title {
-  font-family: "PT Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  position: absolute;
   color: #ffffff;
 }
 
 .breadcrumbs-link {
   width: 73px;
   height: 21px;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
+
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
 }
 
 .catalog-filter-title {
-  position: absolute;
-  font-family: "PT Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -371,19 +400,12 @@ main-container {
 }
 
 catalog-filter-item {
-  position: absolute;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
 }
 
 .search {
-  position: absolute;
-  font-family: "PT Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -392,9 +414,6 @@ catalog-filter-item {
 }
 
 .product-card-title {
-  position: absolute;
-  font-family: "PT Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -402,28 +421,14 @@ catalog-filter-item {
 }
 
 .product-card span {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
-nav a {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: capitalize;
-  color: #000000;
-}
-
 /*Фоны*/
 .main-background {
-  background-image: url("images/index/backgrund.jpg");
-  position: absolute;
+  background-image: url("/images/index/backgrund.jpg");
   width: 1200px;
   height: 485px;
   background-color: #ffffff;
@@ -432,8 +437,7 @@ nav a {
 }
 
 .main-sub {
-  background-image: url("images/index/background.jpg");
-  position: absolute;
+  background-image: url("/images/index/background.jpg");
   width: 1200px;
   height: 411px;
   background-color: #ffffff;
@@ -442,8 +446,7 @@ nav a {
 }
 
 .main-inner {
-  background-image: url("images\catalog\Filter back.jpg");
-  position: absolute;
+  background-image: url("images/catalog/Filter back.jpg");
   width: 1200px;
   height: 393px;
   background-color: #ffffff;
@@ -451,12 +454,11 @@ nav a {
   background-repeat: no-repeat;
 }
 
-html {
-  height: 100%;
-  margin: 0;
-  flex-grow: 1;
-}
-
-li {
-  list-style-type: none;
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
 }
