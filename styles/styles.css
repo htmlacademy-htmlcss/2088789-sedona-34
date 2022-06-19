@@ -83,17 +83,11 @@ body {
   margin-right: 30px;
 }
 
-.logo-image {
-}
-
 .nav-list {
   display: flex;
   margin: 0;
   padding: 0;
   align-items: center;
-}
-
-.nav-list-menu {
 }
 
 .nav-list-user {
@@ -126,7 +120,6 @@ body {
 
 .nav-button {
   padding: 8px 15px;
-  margin-left;
   width: 160px;
   height: 37px;
 
@@ -148,8 +141,8 @@ body {
   justify-content: center;
   width: 100%;
   min-height: 485px;
-  background-image:
-    url("/images/Vector-svg/divider.svg"), url("/images/index/index-background.jpg");
+  background-image: url("/images/Vector-svg/divider.svg"),
+    url("/images/index/index-background.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%, 100% 50%;
 }
@@ -160,14 +153,10 @@ body {
   margin: 0 auto;
 }
 
-.hero-devider {
-}
-
 /* Hero END */
 
-/* Приемущества */
+/* advantages */
 .first-advantages-info {
-  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -175,51 +164,176 @@ body {
   margin: 0;
   text-align: center;
   color: #000000;
+  list-style: none;
+  max-width: 100%;
+  height: 1535px;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .advantages-items-1 {
-display: flex;
-position: absolute;
-min-width: 400px;
-min-height: 384px;
-flex-direction: column;
-align-items: flex-start;
-padding: 0;
-background-color: #82B3D3;
-margin-right: 799px;
-
+  display: flex;
+  position: absolute;
+  min-width: 400px;
+  min-height: 384px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #82b3d3;
+  margin-right: 799px;
 }
 
 .firts-advantages {
-position: absolute;
-max-width: 800px;
-max-height: 384px;
-margin-left: 399px;
-}
-
-
-
-
-.advantages-items {
-  max-width: 450px;
+  position: absolute;
+  max-width: 800px;
   max-height: 384px;
-  list-style: none;
-  margin: 0;
+  margin-left: 399px;
 }
 
+.advantages-items-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  min-width: 400px;
+  min-height: 384px;
+  padding: 0;
+  margin: 385px 800px 766px 0;
 
+  background-color: #82b3d3; /*Для заметности*/
+}
+
+.advantages-items-3 {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+  max-height: 384px;
+  padding: 0;
+  margin: 385px 400px 766px 400px;
+  background-color: #82b3d3; /*Для заметности*/
+}
+
+.advantages-items-4 {
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  flex-direction: column;
+  max-width: 400px;
+  max-height: 384px;
+  padding: 0;
+  margin: 385px 0 766px 800px;
+  background-color: #82b3d3; /*Для заметности*/
+}
+
+.advantages-items-5 {
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  flex-direction: column;
+  max-width: 400px;
+  height: 384px;
+  padding: 0;
+  margin: 767px 0 384px 800px;
+  background-color: #82b3d3; /*Для заметности*/
+}
+
+.advantages-items-6 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  max-width: 400px;
+  max-height: 384px;
+  padding: 0;
+  background-color: #82b3d3; /*Для заметности*/
+  margin: 1151px 800px 0 0;
+}
+
+.advantages-items-7 {
+  display: flex;
+  position: absolute;
+  max-width: 400px;
+  max-height: 384px;
+  padding: 0;
+  margin: 1151px 400px 0 400px;
+  background-color: #82b3d3; /*Для заметности*/
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-items-8 {
+  display: flex;
+  position: absolute;
+  max-width: 400px;
+  max-height: 384px;
+  padding: 0;
+  margin: 1151px 0 0 800px;
+  background-color: #82b3d3; /*Для заметности*/
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* .advantages-items {
+display: flex;
+align-content: stretch;
+position: absolute;
+min-width: 400px;
+min-height: 384px;
+padding: 0;
+background-color: #82B3D3;
+} */
+
+/* .advantages-2 {
+  position: absolute;
+  max-width: 800px;
+  max-height: 384px;
+  margin: 767px 400px 383px 0;
+  padding: 0;
+} */
+
+/* advantages end */
+
+/*subscribe*/
+/* .subscribe-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 411px;
+  background-image:
+    url("/images/index/background(2).png");
+  background-repeat: no-repeat;
+  margin: 417px;
+} */
+/*end subscribe*/
 
 /* Футер */
 .page-footer-container {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
+  max-height: 120px;
   margin: 0 auto;
 }
 
 .social-media-item {
   list-style: none;
+  margin-right: auto;
 }
 
+.contacts-phone {
+  width: 720px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.academy-logo {
+  width: 115px;
+  height: 33px;
+  margin: 49px 70px 38px 803px;
+}
+/* footer end */
 /* Тектс */
 
 .advantages-title {
@@ -244,7 +358,6 @@ margin-left: 399px;
   width: 654px;
   height: 26px;
   display: inline;
-
 }
 
 .advantage-1 {
@@ -258,11 +371,7 @@ margin-left: 399px;
   height: 56px;
   display: flex;
   justify-content: center;
-
-
 }
-
-
 
 .first-advantages-info span {
   font-size: 18px;
@@ -288,28 +397,28 @@ margin-left: 399px;
   line-height: 21px;
   text-align: center;
   color: #333333;
+
+  display: flex;
 }
 
-.advantages-text-white-1{
+.advantages-text-white-1 {
   width: 230px;
   height: 63px;
 
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #FFFFFF;
-
-
+  color: #ffffff;
 }
 
-.advantages-text-white-2{
+.advantages-text-white-2 {
   width: 230px;
   height: 63px;
 
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .advantage-2 span {
@@ -332,6 +441,19 @@ margin-left: 399px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  list-style: none;
+}
+
+.advantages-item-h-1 {
+  width: 230px;
+  height: 28px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
   list-style: none;
 }
 
@@ -376,13 +498,6 @@ margin-left: 399px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff;
-}
-
-.main-sub {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
   color: #ffffff;
 }
 
@@ -458,10 +573,11 @@ catalog-filter-item {
 .main-sub {
   background-image: url("/images/index/background.jpg");
   width: 1200px;
-  height: 411px;
+  height: 417px;
   background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .main-inner {
