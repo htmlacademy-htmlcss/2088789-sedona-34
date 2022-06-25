@@ -239,62 +239,6 @@ body {
 
 /* advantages end */
 
-/*subscribe*/
-/* .subscribe-background {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 411px;
-  background-image:
-    url("/images/index/background(2).png");
-  background-repeat: no-repeat;
-  margin: 417px;
-} */
-
-/* .search-button {
-
-  background-color: #756157;
-  border-radius: 4px;
-  width: 574px;
-  height: 60px;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin: 264px 313px 93px 313px;
-} */
-/*end subscribe*/
-
-/* Футер */
-.page-footer-container {
-  display: flex;
-  max-width: 1200px;
-  max-height: 120px;
-  margin: 0 auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.social-media-item {
-  list-style: none;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.contacts-phone {
-  width: 720px;
-  height: 50px;
-  margin: 0 auto;
-  display: flex;
-}
-
-.academy-logo {
-  width: 115px;
-  height: 33px;
-  margin: 49px 70px 38px 803px;
-}
-/* footer end */
 /* Тектст */
 
 .advantages-title {
@@ -353,18 +297,6 @@ body {
   height: 63px;
 }
 
-.advantages-text {
-  width: 230px;
-  height: 63px;
-
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #333333;
-
-  display: flex;
-}
-
 .advantages-text-white-1 {
   width: 230px;
   height: 63px;
@@ -421,49 +353,66 @@ body {
   list-style: none;
 }
 
-.advantages-item-2 span {
-  width: 230px;
-  height: 21px;
-
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #000000;
+/* Serch hotel */
+.main-search {
+  width: 1200px;
+  height: 417px;
 }
 
-.advantages-item-2 p {
-  font-size: 18px;
-  line-height: 21px;
+.head-search {
   text-align: center;
-  color: #000000;
-  width: 230px;
-  height: 63px;
+  padding: 91px 451px;
+  margin: 0;
 }
 
-.main-search h2 {
-  color: #000000;
+.advantages-text {
+  display: flex;
+  justify-content: center;
+}
 
-  font-weight: 700;
-  font-size: 30px;
+.search-button {
+  width: 574px;
+  height: 60px;
+
+  font-size: 20px;
   line-height: 36px;
+  color: #ffffff;
+  background-color: #756157;
   text-align: center;
   text-transform: uppercase;
 }
 
-.main-search p {
+/* Search hotel end */
+
+/* Subscribe */
+
+.main-sub {
+  width: 1200px;
+  height: 417px;
+}
+
+.head-sub {
+  text-align: center;
+  color: #000000;
+}
+
+.advantages-text {
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
-  color: #333333;
 }
 
-.main-sub h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
+.subscribe-button {
+  width: 200px;
+  height: 60px;
+
   color: #ffffff;
+  font-size: 20px;
+  line-height: 36px;
+
+  background-color: #82b3d3;
 }
+
+/* Subscribe end */
 
 .contacts-phone {
   font-size: 40px;
@@ -473,6 +422,45 @@ body {
   color: #000000;
 }
 
+/* Footer */
+.page-footer {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-media-item {
+  list-style: none;
+}
+
+.footer-social-list {
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts-phone {
+  width: 720px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.academy-logo {
+  width: 115px;
+  height: 33px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+/* Footer end */
+
+/* Catalog.html */
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
@@ -523,6 +511,8 @@ catalog-filter-item {
   line-height: 21px;
   color: #333333;
 }
+
+/* Catalog.html end */
 
 /*Фоны*/
 .main-background {
