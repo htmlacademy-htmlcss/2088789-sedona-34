@@ -512,6 +512,16 @@ catalog-filter-item {
   color: #333333;
 }
 
+.filter-content {
+  width: 1200px;
+  height: 403px;
+}
+
+.catalog {
+  width: 1200px;
+  height: 1212px;
+}
+
 /* Catalog.html end */
 
 /*Фоны*/
