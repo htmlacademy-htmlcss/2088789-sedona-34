@@ -183,10 +183,7 @@ body {
 
 /* First Advantage photo */
 /* .first-advantages-picture {
-  width: 800px;
-  height: 384px;
-  display: flex;
-  justify-content: flex-end;
+
 } */
 
 .advantages-container-second {
@@ -361,11 +358,13 @@ body {
 
 .head-search {
   text-align: center;
-  padding: 91px 451px;
+  padding-top: 91px;
   margin: 0;
 }
 
 .advantages-text {
+  padding-top: 29px;
+
   display: flex;
   justify-content: center;
 }
@@ -373,6 +372,9 @@ body {
 .search-button {
   width: 574px;
   height: 60px;
+
+  display: block;
+  margin: 0 auto;
 
   font-size: 20px;
   line-height: 36px;
@@ -412,15 +414,16 @@ body {
   background-color: #82b3d3;
 }
 
-/* Subscribe end */
+.email-string {
+  background: #f2f2f2;
+  border-radius: 0 10px 10px 0;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 
-.contacts-phone {
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
+  width: 600px;
+  height: 60px;
 }
+
+/* Subscribe end */
 
 /* Footer */
 .page-footer {
@@ -437,6 +440,8 @@ body {
 
 .footer-social-list {
   margin: 0;
+  gap: 1rem;
+  padding-top: 45px;
 
   display: flex;
   flex-direction: row;
@@ -449,14 +454,18 @@ body {
 
   display: flex;
   justify-content: center;
+  align-self: center;
+
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .academy-logo {
   width: 115px;
   height: 33px;
-
-  display: flex;
-  justify-content: flex-end;
 }
 /* Footer end */
 
@@ -560,4 +569,11 @@ catalog-filter-item {
   overflow: hidden;
   white-space: nowrap;
   width: 1px;
+}
+
+.subscribe-background {
+  background-image: url("/images/index/background\(2\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
