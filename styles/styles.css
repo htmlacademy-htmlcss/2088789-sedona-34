@@ -184,6 +184,9 @@ body {
 /* First Advantage photo */
 /* .first-advantages-picture {
 
+
+
+  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 } */
 
 .advantages-container-second {
@@ -214,6 +217,7 @@ body {
   height: 384px;
   display: flex;
   justify-content: flex-start;
+  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 } */
 
 .advantages-container-fourth {
@@ -232,7 +236,26 @@ body {
   max-height: 384px;
 
   background-color: #82b3d3;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+.item-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.item-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Another colors */
+
+.another-light-gray {
+  background-color: #83b3d3;
+}
+
+/* Another colors end */
 
 /* advantages end */
 
@@ -469,6 +492,51 @@ body {
 }
 /* Footer end */
 
+/*Фоны*/
+.main-background {
+  background-image: url("/images/index/backgrund.jpg");
+  width: 1200px;
+  height: 485px;
+  background-color: #ffffff;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main-sub {
+  background-image: url("/images/index/background.jpg");
+  width: 1200px;
+  height: 417px;
+  background-color: #ffffff;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.main-inner {
+  background-image: url("/images/catalog/Filter back.jpg");
+  width: 1200px;
+  height: 393px;
+  background-color: #ffffff;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.subscribe-background {
+  background-image: url("/images/index/background\(2\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
 /* Catalog.html */
 .inner-header-title {
   font-weight: 700;
@@ -529,51 +597,8 @@ catalog-filter-item {
 .catalog {
   width: 1200px;
   height: 1212px;
+
+  display: flex;
 }
 
 /* Catalog.html end */
-
-/*Фоны*/
-.main-background {
-  background-image: url("/images/index/backgrund.jpg");
-  width: 1200px;
-  height: 485px;
-  background-color: #ffffff;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
-.main-sub {
-  background-image: url("/images/index/background.jpg");
-  width: 1200px;
-  height: 417px;
-  background-color: #ffffff;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.main-inner {
-  background-image: url("/images/catalog/Filter back.jpg");
-  width: 1200px;
-  height: 393px;
-  background-color: #ffffff;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.subscribe-background {
-  background-image: url("/images/index/background\(2\).png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-}
