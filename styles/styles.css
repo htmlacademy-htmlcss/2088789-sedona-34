@@ -252,10 +252,43 @@ body {
 /* Another colors */
 
 .another-light-gray {
-  background-color: #83b3d3;
+  background-color: #83b3d3 20%;
 }
 
 /* Another colors end */
+
+/* White color advantages */
+
+.advantage-white {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  width: 230px;
+  height: 56px;
+
+  margin: 0;
+  padding-top: 92px;
+}
+
+.adnvantage-number-white {
+  color: #ffffff;
+
+  padding-top: 30px;
+  margin: 0;
+}
+
+.advantage-text-white {
+  color: #ffffff;
+  padding-top: 30px;
+  margin: 0;
+}
+
+/* White color advantages end */
 
 /* advantages end */
 
@@ -286,19 +319,6 @@ body {
   width: 654px;
   height: 26px;
   padding-bottom: 90px;
-}
-
-.advantage-1 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  width: 230px;
-  height: 56px;
-  display: flex;
-  justify-content: center;
 }
 
 .first-advantages-info span {
@@ -354,10 +374,50 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   list-style: none;
+
+  margin: 0;
+  padding: ;
+}
+
+/* Items with icon */
+.advantages-item-h-icon {
+  padding-top: 182px;
+  margin: 0;
+}
+
+.advantages-text-icon {
+  padding-top: 30px;
+  margin: 0;
+}
+
+/* Items with icon end */
+
+/* Advantages with numbers */
+
+.advantages-item-h-numbers {
+  padding-top: 103px;
+  margin: 0;
+}
+
+.advantage-number {
+  padding-top: 30px;
+  margin: 0;
+}
+
+.advantages-text-number {
+  padding-top: 30px;
+  margin: 0;
+}
+/* Advantages with numbers end */
+
+.advantages-text {
+  padding: 29px 0 0 304px;
+  margin: 0;
 }
 
 .advantages-item-h-1 {
@@ -373,6 +433,9 @@ body {
   list-style: none;
 }
 
+.advantage-number {
+}
+
 /* Serch hotel */
 .main-search {
   width: 1200px;
@@ -385,19 +448,12 @@ body {
   margin: 0;
 }
 
-.advantages-text {
-  padding-top: 29px;
-
-  display: flex;
-  justify-content: center;
-}
-
 .search-button {
   width: 574px;
   height: 60px;
 
-  display: block;
-  margin: 0 auto;
+  /* display: block; */
+  margin: 56px 313px;
 
   font-size: 20px;
   line-height: 36px;
@@ -419,11 +475,6 @@ body {
 .head-sub {
   text-align: center;
   color: #000000;
-}
-
-.advantages-text {
-  font-size: 22px;
-  line-height: 26px;
 }
 
 .subscribe-button {
