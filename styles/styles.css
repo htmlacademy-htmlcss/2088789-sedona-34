@@ -240,6 +240,9 @@ body {
 
   background-color: #82b3d3;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  display: flex;
+  flex-direction: column;
 }
 
 .item-end {
@@ -274,8 +277,8 @@ body {
   width: 230px;
   height: 56px;
 
-  margin: 0;
-  padding-top: 92px;
+  margin: 92px 85px 0 54px;
+  padding: 0;
 }
 
 .adnvantage-number-white {
@@ -420,7 +423,7 @@ body {
 /* Advantages with numbers end */
 
 .advantages-text {
-  padding: 29px 0 0 304px;
+  padding: 29px 304px 0 304px;
   margin: 0;
 }
 
@@ -521,26 +524,38 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  width: 183px;
+  height: 40px;
 }
 
 .contacts-phone {
   width: 720px;
   height: 50px;
 
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  display: block;
+  /* justify-content: center;
+  align-self: center; */
 
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  padding: 0;
+  margin: 41px 0 0 253px;
 }
 
 .academy-logo {
   width: 115px;
   height: 33px;
+}
+
+.academy-logotype {
+  display: block;
+  padding: 48px 70px 38px 41px;
+  margin: 0;
 }
 /* Footer end */
 
