@@ -131,9 +131,10 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input
-                      class="control-input"
+                      class="control-input-checked"
                       type="radio"
                       name="product-group"
+                      checked
                     />
                     Гостиница
                   </label>
@@ -358,19 +359,24 @@
         </p>
         <form class="email" action="https://echo.htmlacademy.ru/" metod="post">
           <!-- <input type="text" name="appointment-date" /> -->
-          <input name="email" type="text" palceholder="Ваш e-mail" />
+          <input
+            class="email-string"
+            name="email"
+            type="text"
+            palceholder="Ваш e-mail"
+          />
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
       <!-- footer -->
       <footer class="page-footer">
-        <!--Соц. сети-->
+        <!--Соц.сети-->
         <ul class="footer-social-list">
           <li class="social-media-item">
             <a class="button" href="https://vk.com/htmlacademy">
               <img
                 class="social-media-item"
-                src="images/Vector-svg/VK.svg"
+                src="/images/Vector-svg/VK.svg"
                 width="24"
                 height="14"
                 alt="Вконтакте."
@@ -381,7 +387,7 @@
             <a class="button" href="https://t.me/htmlacademy">
               <img
                 class="social-media-item"
-                src="images/Vector-svg/TG.svg"
+                src="/images/Vector-svg/TG.svg"
                 width="18"
                 height="17"
                 alt="Телеграм."
@@ -391,7 +397,7 @@
           <li class="social-media-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
               <img
-                src="images/Vector-svg/UT.svg"
+                src="/images/Vector-svg/UT.svg"
                 width="22"
                 height="17"
                 alt="Ютуб."
@@ -400,17 +406,15 @@
           </li>
         </ul>
         <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-        <div>
-          <a href="https://htmlacademy.ru/">
-            <img
-              class="academy-logo"
-              src="images/Vector-svg/HTML-Academy.svg"
-              width="115"
-              height="33"
-              alt="Логотип."
-            />
-          </a>
-        </div>
+        <a class="academy-logotype" href="https://htmlacademy.ru/">
+          <img
+            class="academy-logo"
+            src="/images/Vector-svg/HTML-Academy.svg"
+            width="115"
+            height="33"
+            alt="Логотип."
+          />
+        </a>
       </footer>
     </div>
   </body>

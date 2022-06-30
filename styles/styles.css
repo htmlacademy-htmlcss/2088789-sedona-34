@@ -34,19 +34,19 @@ body {
   background-color: #ffffff;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 * {
   box-sizing: border-box;
 }
 
 .list {
   list-style: none;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Header */
@@ -277,7 +277,8 @@ body {
   width: 230px;
   height: 56px;
 
-  margin: 92px 85px 0 54px;
+  display: block;
+  margin: 92px 85px 0 85px;
   padding: 0;
 }
 
@@ -286,6 +287,7 @@ body {
   display: block;
 
   margin: 30px 0 0 0;
+  padding: 0;
 }
 
 .advantage-text-white {
@@ -471,11 +473,6 @@ body {
 
 /* Subscribe */
 
-.main-sub {
-  width: 1200px;
-  height: 417px;
-}
-
 .head-sub {
   text-align: center;
   color: #000000;
@@ -490,6 +487,7 @@ body {
   line-height: 36px;
 
   background-color: #82b3d3;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .email-string {
@@ -499,6 +497,9 @@ body {
 
   width: 600px;
   height: 60px;
+
+  padding: 0;
+  margin-top: 46px;
 }
 
 /* Subscribe end */
@@ -557,6 +558,10 @@ body {
   padding: 48px 70px 38px 41px;
   margin: 0;
 }
+
+.social-media-item:nth-child(3n) {
+  margin-right: 10px;
+}
 /* Footer end */
 
 /*Фоны*/
@@ -571,8 +576,8 @@ body {
 
 .main-sub {
   background-image: url("/images/index/background.jpg");
-  width: 1200px;
-  height: 417px;
+  width: 100%;
+  min-height: 417px;
   background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -581,8 +586,8 @@ body {
 
 .main-inner {
   background-image: url("/images/catalog/Filter back.jpg");
-  width: 1200px;
-  height: 393px;
+  width: 100%;
+  min-height: 393px;
   background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -605,6 +610,7 @@ body {
 }
 
 /* Catalog.html */
+
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
@@ -657,15 +663,31 @@ catalog-filter-item {
 }
 
 .filter-content {
-  width: 1200px;
-  height: 403px;
+  width: 100%;
+  min-height: 403px;
 }
 
 .catalog {
-  width: 1200px;
-  height: 1212px;
+  width: 100%;
+  min-height: 1212px;
 
-  display: flex;
+  list-style: none;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+.breadcrubs {
+  list-style: none;
+}
+
+.product-list {
+  list-style: none;
+}
+
+.pagination {
+  list-style: none;
 }
 
 /* Catalog.html end */
