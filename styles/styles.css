@@ -180,17 +180,16 @@ body {
   padding: 0;
   margin: 0;
 
-  width: 1200px;
+  width: 100%;
   height: 384px;
 }
 
 /* First Advantage photo */
-/* .first-advantages-picture {
+.first-advantages-picture {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
-
-
-  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-} */
+  order: 2;
+}
 
 .advantages-container-second {
   display: flex;
@@ -199,8 +198,8 @@ body {
 
   padding: 0;
   margin: 0;
-  width: 1200px;
-  height: 384px;
+  width: 100%;
+  min-height: 384px;
 }
 
 .advantages-container-third {
@@ -210,18 +209,14 @@ body {
 
   padding: 0;
   margin: 0;
-  width: 1200px;
-  height: 384px;
+  width: 100%;
+  min-height: 384px;
 }
 
 /* Second Advantage photo */
-/* .second-advantages-picture {
-  width: 800px;
-  height: 384px;
-  display: flex;
-  justify-content: flex-start;
-  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-} */
+.second-advantages-picture {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
 
 .advantages-container-fourth {
   display: flex;
@@ -235,24 +230,25 @@ body {
 }
 
 .advantages-item {
-  max-width: 400px;
-  max-height: 384px;
+  width: 400px;
+  min-height: 384px;
 
   background-color: #82b3d3;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   display: flex;
   flex-direction: column;
+  align-content: center;
 }
 
 .item-end {
-  display: flex;
-  justify-content: flex-end;
+  order: 2;
 }
 
 .item-start {
   display: flex;
   justify-content: flex-start;
+  align-content: center;
 }
 
 /* Another colors */
@@ -427,6 +423,9 @@ body {
 .advantages-text {
   padding: 29px 304px 0 304px;
   margin: 0;
+
+  display: block;
+  text-align: center;
 }
 
 .advantages-item-h-1 {
@@ -476,10 +475,13 @@ body {
 .head-sub {
   text-align: center;
   color: #000000;
+
+  padding-top: 94px;
+  margin: 0;
 }
 
 .subscribe-button {
-  width: 200px;
+  min-width: 200px;
   height: 60px;
 
   color: #ffffff;
@@ -488,10 +490,13 @@ body {
 
   background-color: #82b3d3;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  padding: 12px 0;
 }
 
 .email-string {
   background: #f2f2f2;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0 10px 10px 0;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 
@@ -508,23 +513,29 @@ body {
 .page-footer {
   display: flex;
   width: 1200px;
-  height: 120px;
+  min-height: 120px;
   margin: 0 auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .social-media-item {
   list-style: none;
+
+  width: 47px;
+  height: 40px;
+
+  display: flex;
+  align-self: stretch;
 }
 
 .footer-social-list {
   margin: 0;
-  gap: 1rem;
-  padding-top: 45px;
+  padding: 45px 0 0 70px;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 
   width: 183px;
   height: 40px;
@@ -534,18 +545,14 @@ body {
   width: 720px;
   height: 50px;
 
-  display: block;
-  /* justify-content: center;
-  align-self: center; */
-
   font-size: 40px;
   line-height: 40px;
-  text-align: center;
+
   text-transform: uppercase;
   color: #000000;
 
-  padding: 0;
-  margin: 41px 0 0 253px;
+  padding: 5px 0 0 195px;
+  margin: 40px 0 0 41px;
 }
 
 .academy-logo {
@@ -602,8 +609,10 @@ body {
   width: 1px;
 }
 
-.subscribe-background {
-  background-image: url("/images/index/background\(2\).png");
+.main-sub {
+  background-image: url("../images/index/background-sub.png");
+  width: 100%;
+  min-height: 411px;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -628,6 +637,9 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+
+  padding: 57px 0 0 72px;
+  margin: 0;
 }
 
 /* Filter item */
@@ -656,8 +668,8 @@ body {
 }
 
 .catalog-filters {
-  width: 366px;
-  height: 149px;
+  min-width: 366px;
+  min-height: 149px;
 
   padding: 40px 0 0 70px;
   margin: 0;
@@ -681,7 +693,7 @@ body {
   margin: 0;
   padding: 0;
 
-  display: flex;
+  /* display: flex; */
 }
 
 .breadcrumbs-item-icon {
@@ -704,6 +716,33 @@ catalog-filter-item {
 }
 
 /* Filter end */
+
+/* Product cards */
+.select-control {
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+
+  box-sizing: border-box;
+  width: 290px;
+  height: 49px;
+
+  align-items: center;
+  padding: 14px 20px;
+  margin: 50px 0 0 191px;
+}
+
+.button {
+  width: 48px;
+  height: 48px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.select {
+  display: flex;
+  justify-content: space-around;
+}
 
 .product-card-title {
   font-weight: 700;
@@ -745,5 +784,7 @@ catalog-filter-item {
 .pagination {
   list-style: none;
 }
+
+/* Product cards end */
 
 /* Catalog.html end */

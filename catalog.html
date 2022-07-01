@@ -48,8 +48,8 @@
             <li>
               <a class="nav-icon" href="#">
                 <img
-                  class="social-media-item"
-                  src="/images/Vector-svg/favorite(1).svg"
+                  class="favorite-icon"
+                  src="images/Vector-svg/Favorite.svg"
                   alt="Избранное."
                   width="18"
                   height="17"
@@ -87,13 +87,6 @@
             action="https://echo.htmlacademy.ru"
             method="get"
           >
-            <!-- <img
-              class="filter-background"
-              src="images/catalog/Filter-back.jpg"
-              alt="Красивый фон."
-              width="1200"
-              height="393"
-            /> -->
             <!--Классы фильров-->
             <div class="catalog-filters">
               <fieldset class="catalog-filter-group">
@@ -186,7 +179,7 @@
             >
               Применить
             </button>
-            <button type="reset" name="reset" value="Сбросить"></button>
+            <button type="reset" name="reset" value="Сбросить">Сбросить</button>
           </form>
         </div>
 
@@ -194,45 +187,47 @@
 
         <!--Кнопки сортировки-->
         <div class="catalog">
-          <a href="#" class="button">
-            <span class="visually-hidden">Таблица</span>
-          </a>
-          <img
-            class="breadcrumbs-item"
-            src="/images/breadcrumbs/icon-table.svg"
-            alt="Таблица."
-            width="16"
-            height="14"
-          />
+          <div class="select">
+            <h2 class="search">Найдено гостиниц: 38</h2>
 
-          <a href="#" class="button button-light">
-            <span class="visually-hidden">Большой список</span>
-          </a>
-          <img
-            class="breadcrumbs-item"
-            src="/images/breadcrumbs/icon-slideshow.svg"
-            alt="Большой список."
-            width="16"
-            height="14"
-          />
+            <!--Селектор-->
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheep">Сначала дешевые</option>
+            </select>
 
-          <a href="#" class="button button-light">
-            <span class="visually-hidden">Список</span>
-          </a>
-          <img
-            class="breadcrumbs-item"
-            src="/images/breadcrumbs/icon-list.svg"
-            alt="Список"
-            width="16"
-            height="14"
-          />
+            <a href="#" class="button">
+              <span class="visually-hidden">Таблица</span>
+            </a>
+            <img
+              class="breadcrumbs-item"
+              src="/images/breadcrumbs/icon-table.svg"
+              alt="Таблица."
+              width="16"
+              height="14"
+            />
 
-          <h2 class="search">Найдено гостиниц: 38</h2>
+            <a href="#" class="button button-light">
+              <span class="visually-hidden">Большой список</span>
+            </a>
+            <img
+              class="breadcrumbs-item"
+              src="/images/breadcrumbs/icon-slideshow.svg"
+              alt="Большой список."
+              width="16"
+              height="14"
+            />
 
-          <!--Селектор-->
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheep">Сначала дешевые</option>
-          </select>
+            <a href="#" class="button button-light">
+              <span class="visually-hidden">Список</span>
+            </a>
+            <img
+              class="breadcrumbs-item"
+              src="/images/breadcrumbs/icon-list.svg"
+              alt="Список"
+              width="16"
+              height="14"
+            />
+          </div>
 
           <!--Карточки товаров-->
           <ul class="product-list">
@@ -253,6 +248,36 @@
               <button type="button" class="product-card-button">
                 В избранное
               </button>
+              <div class="hotel-rait-stars">
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+              </div>
               <button type="button" class="product-card-rating">
                 Рейтинг: 8,5
               </button>
@@ -275,6 +300,39 @@
               <button type="button" class="product-card-button">
                 В избранном
               </button>
+              <div class="hotel-rait-stars">
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+              </div>
               <button type="button" class="product-card-rating">
                 Рейтинг: 9,2
               </button>
@@ -297,6 +355,29 @@
               <button type="button" class="product-card-button">
                 В избранное
               </button>
+              <div class="hotel-rait-stars">
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+              </div>
               <button type="button" class="product-card-rating">
                 Рейтинг: 6,9
               </button>
@@ -319,6 +400,22 @@
               <button type="button" class="product-card-button">
                 В избранное
               </button>
+              <div class="hotel-rait-stars">
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+                <img
+                  class="stars"
+                  src="/images/rating-stars/Star.svg"
+                  atl="звездa"
+                  width="18px"
+                  height="17px"
+                />
+              </div>
               <button type="button" class="product-card-rating">
                 Рейтинг: 5,0
               </button>
@@ -365,13 +462,6 @@
 
       <!--Рассылка-->
       <section class="main-sub">
-        <!-- <img
-          class="subscribe-background"
-          src="images/index/background(2).png"
-          alt="Красивый фон."
-          width="1200"
-          height="411"
-        /> -->
         <h2 class="head-sub">Подпишитесь на рассылку</h2>
         <p class="advantages-text">
           Только полезная информация и никакого спама, <br />
