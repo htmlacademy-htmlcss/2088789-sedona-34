@@ -51,8 +51,8 @@
                   class="favorite-icon"
                   src="images/Vector-svg/Favorite.svg"
                   alt="Избранное."
-                  width="18"
-                  height="17"
+                  width="42px"
+                  height="66px"
                 />
               </a>
             </li>
@@ -167,7 +167,7 @@
                   </li>
                 </ul>
               </fieldset>
-            </div>
+
             <!--сортировка по ценам-->
 
             <!--Кнопки-->
@@ -180,14 +180,15 @@
               Применить
             </button>
             <button type="reset" name="reset" value="Сбросить">Сбросить</button>
+          </div>
           </form>
-        </div>
+
 
         <!--Каталог-->
 
         <!--Кнопки сортировки-->
         <div class="catalog">
-          <div class="select">
+          <div class="select-container">
             <h2 class="search">Найдено гостиниц: 38</h2>
 
             <!--Селектор-->
@@ -230,6 +231,7 @@
           </div>
 
           <!--Карточки товаров-->
+          <div class="product-card-container">
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -244,7 +246,7 @@
               </a>
               <span class="product-card-hotel">Гостиница</span>
               <span class="product-card-price">От 4000 ₽</span>
-              <a class="product-card-button" href="#">Подробнее</a>
+              <a class="product-card-button-detailed" href="#">Подробнее</a>
               <button type="button" class="product-card-button">
                 В избранное
               </button>
@@ -296,7 +298,7 @@
               </a>
               <span class="product-card-hotel">Гостиница</span>
               <span class="product-card-price">От 4000 ₽</span>
-              <a class="product-card-button" href="#">Подробнее</a>
+              <a class="product-card-button-detailed" href="#">Подробнее</a>
               <button type="button" class="product-card-button">
                 В избранном
               </button>
@@ -351,7 +353,7 @@
               </a>
               <span class="product-card-hotel">Гостиница</span>
               <span class="product-card-price">От 4000 ₽</span>
-              <a class="product-card-button" href="#">Подробнее</a>
+              <a class="product-card-button-detailed" href="#">Подробнее</a>
               <button type="button" class="product-card-button">
                 В избранное
               </button>
@@ -396,7 +398,7 @@
               </a>
               <span class="product-card-hotel">Гостиница</span>
               <span class="product-card-price">От 4000 ₽</span>
-              <a class="product-card-button" href="#">Подробнее</a>
+              <a class="product-card-button-detailed" href="#">Подробнее</a>
               <button type="button" class="product-card-button">
                 В избранное
               </button>
@@ -421,47 +423,52 @@
               </button>
             </li>
           </ul>
+          </div>
+
+          <div class="grey-border"></div>
 
           <!--Пагинация-->
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
 
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
 
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
 
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
 
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
 
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
+              <li class="pagination-item">
+                <a class="pagination-link-long" href="#">10</a>
+              </li>
+            </ul>
 
-          <!--Селектор-->
-          <p>Гостиниц на странице:</p>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheep">1</option>
-            <option value="cheep">2</option>
-            <option value="cheep">3</option>
-            <option value="cheep">4</option>
-          </select>
+            <!--Селектор-->
+            <p class="selector-text">Гостиниц на странице:</p>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheep">1</option>
+              <option value="cheep">2</option>
+              <option value="cheep">3</option>
+              <option value="cheep">4</option>
+            </select>
+          </div>
         </div>
       </main>
 
       <!--Рассылка-->
-      <section class="main-sub">
+      <section class="catalog-sub">
         <h2 class="head-sub">Подпишитесь на рассылку</h2>
         <p class="advantages-text">
           Только полезная информация и никакого спама, <br />
@@ -485,8 +492,8 @@
           <li class="social-media-item">
             <a class="button" href="https://vk.com/htmlacademy">
               <img
-                class="social-media-item"
-                src="/images/Vector-svg/VK.svg"
+                class="social-media-VK"
+                src="images/Vector-svg/VK.svg"
                 width="24"
                 height="14"
                 alt="Вконтакте."
@@ -496,8 +503,8 @@
           <li class="social-media-item">
             <a class="button" href="https://t.me/htmlacademy">
               <img
-                class="social-media-item"
-                src="/images/Vector-svg/TG.svg"
+                class="social-media-TG"
+                src="images/Vector-svg/TG.svg"
                 width="18"
                 height="17"
                 alt="Телеграм."
@@ -507,7 +514,8 @@
           <li class="social-media-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
               <img
-                src="/images/Vector-svg/UT.svg"
+                class="social-media-UT"
+                src="images/Vector-svg/UT.svg"
                 width="22"
                 height="17"
                 alt="Ютуб."
@@ -519,7 +527,7 @@
         <a class="academy-logotype" href="https://htmlacademy.ru/">
           <img
             class="academy-logo"
-            src="/images/Vector-svg/HTML-Academy.svg"
+            src="images/Vector-svg/HTML-Academy.svg"
             width="115"
             height="33"
             alt="Логотип."
