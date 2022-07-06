@@ -752,6 +752,9 @@ catalog-filter-item {
   align-items: center;
   padding: 14px 0 14px 20px;
   margin: 0;
+
+  display: flex;
+  align-self: center;
 }
 
 .button {
@@ -964,15 +967,25 @@ catalog-filter-item {
   background-color: #82b3d3;
 }
 
-.selector-text {
+.selector-container {
+  min-width: 286px;
+  min-height: 49px;
+
+  display: flex;
+  align-items: center;
+  gap: 51px;
+}
+
+/* .selector-text {
   margin: 0;
   padding: 0;
 
-  width: 175px;
-  height: 23px;
+  min-width: 175px;
+  min-height: 23px;
 
   display: flex;
-}
+  align-self: center;
+} */
 /* Pagination end */
 
 /* Catalog sub */
