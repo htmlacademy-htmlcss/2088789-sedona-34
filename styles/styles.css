@@ -650,8 +650,10 @@ body {
   text-transform: uppercase;
   color: #000000;
 
-  /* padding: 57px 0 0 72px; */
-  margin: 50px 0 0 72px;
+  margin: 0;
+  padding-left: 72px;
+
+  text-align: center;
 }
 
 /* Filter item */
@@ -683,6 +685,7 @@ body {
 
 .catalog-filter-group {
   border: 0;
+  color: #ffffff;
 
   display: flex;
   flex-direction: row;
@@ -730,6 +733,9 @@ body {
   line-height: 26px;
   text-transform: capitalize;
   color: #ffffff;
+
+  padding-bottom: 0;
+  margin-bottom: 30px;
 }
 
 catalog-filter-item {
@@ -746,12 +752,12 @@ catalog-filter-item {
   border-radius: 4px;
 
   box-sizing: border-box;
-  width: 160px;
-  height: 49px;
+  min-width: 290px;
+  min-height: 49px;
 
   align-items: center;
-  padding: 14px 0 14px 20px;
-  margin: 0;
+  padding: 14px 129px 14px 20px;
+  margin-left: 191px;
 
   display: flex;
   align-self: center;
@@ -810,10 +816,12 @@ catalog-filter-item {
 
 .select-container {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  /* justify-content: space-around; */
 
   width: 1057px;
-  height: 49px;
+  min-height: 49px;
+  margin-top: 50px;
 }
 
 .product-card-title {
@@ -843,6 +851,15 @@ catalog-filter-item {
 
 .catalog-filter-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .breadcrubs {
@@ -858,7 +875,7 @@ catalog-filter-item {
 
   min-height: 876px;
 
-  padding: 56px 71px 0 73px;
+  padding: 0 71px 0 73px;
   margin-bottom: 44px;
 }
 
