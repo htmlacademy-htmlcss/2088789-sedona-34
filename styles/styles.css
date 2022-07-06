@@ -752,12 +752,12 @@ catalog-filter-item {
   border-radius: 4px;
 
   box-sizing: border-box;
-  min-width: 290px;
+  min-width: 160px;
   min-height: 49px;
 
   align-items: center;
-  padding: 14px 129px 14px 20px;
-  margin-left: 191px;
+  padding: 0 0 0 20px;
+  margin: 0;
 
   display: flex;
   align-self: center;
@@ -915,8 +915,7 @@ catalog-filter-item {
 
 .pagination-container {
   display: flex;
-
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   padding: 0;
   width: 1056px;
@@ -985,24 +984,30 @@ catalog-filter-item {
 }
 
 .selector-container {
-  min-width: 286px;
+  width: 386px;
   min-height: 49px;
 
   display: flex;
   align-items: center;
-  gap: 51px;
+  /* gap: 51px; */
+
+  padding: 0;
+  margin-left: 270px;
 }
 
-/* .selector-text {
-  margin: 0;
+.selector-text {
+  margin-right: 51px;
   padding: 0;
 
   min-width: 175px;
   min-height: 23px;
 
+  font-size: 18px;
+  line-height: 21px;
+
   display: flex;
   align-self: center;
-} */
+}
 /* Pagination end */
 
 /* Catalog sub */
