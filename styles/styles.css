@@ -260,9 +260,16 @@ body {
 /* Another colors */
 
 .another-light-gray {
-  background-color: #83b3d3 20%;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
+.white-background {
+  background-color: #ffffff;
+}
+
+.another-background {
+  background-color: rgba(131, 179, 211, 0.2);
+}
 /* Another colors end */
 
 /* White color advantages */
@@ -348,9 +355,9 @@ body {
   height: 63px;
 }
 
-.advantages-text-white-1 {
-  width: 230px;
-  height: 63px;
+.advantages-text-white {
+  min-width: 230px;
+  min-height: 63px;
 
   font-size: 18px;
   line-height: 21px;
@@ -358,14 +365,17 @@ body {
   color: #ffffff;
 }
 
-.advantages-text-white-2 {
-  width: 230px;
-  height: 63px;
-
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
+.advantages-h-white {
+  padding-top: 92px;
   color: #ffffff;
+  margin: 0;
+}
+
+.advantages-h {
+  font-size: 24px;
+  line-height: 28px;
+
+  text-transform: uppercase;
 }
 
 .advantage-2 span {
@@ -403,6 +413,10 @@ body {
 .advantages-text-icon {
   padding-top: 30px;
   margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #333333;
 }
 
 /* Items with icon end */
@@ -424,6 +438,11 @@ body {
 .advantages-text-number {
   padding-top: 30px;
   margin: 0;
+
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #333333;
 }
 /* Advantages with numbers end */
 
