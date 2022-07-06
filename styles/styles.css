@@ -76,6 +76,7 @@ body {
 .main-navigation {
   display: flex;
   width: 100%;
+  height: 65px;
   margin: 0 auto;
 }
 
@@ -93,8 +94,18 @@ body {
   align-items: center;
 }
 
+.nav-list-menu {
+  min-width: 460px;
+  height: 65px;
+}
+
 .nav-list-user {
   margin-left: auto;
+
+  min-width: 264px;
+  height: 65px;
+
+  justify-content: flex-end;
 }
 
 .nav-link {
@@ -162,8 +173,8 @@ body {
 /* advantages */
 .advantages-info {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+
   padding: 0;
   margin: 0;
   text-align: center;
@@ -175,29 +186,24 @@ body {
 
 .advantages-container-first {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  flex-direction: column;
 
   padding: 0;
   margin: 0;
 
   width: 100%;
-  height: 384px;
+  min-height: 384px;
 }
 
 /* First Advantage photo */
 .first-advantages-picture {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
-  border: 0;
-
   order: 2;
 }
 
 .advantages-container-second {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
 
   padding: 0;
   margin: 0;
@@ -207,8 +213,7 @@ body {
 
 .advantages-container-third {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  flex-direction: row-reverse;
 
   padding: 0;
   margin: 0;
@@ -223,13 +228,11 @@ body {
 
 .advantages-container-fourth {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
 
   padding: 0;
   margin: 0;
-  width: 1200px;
-  height: 384px;
+  width: 100%;
+  min-height: 384px;
 }
 
 .advantages-item {
@@ -309,9 +312,10 @@ body {
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
-  margin: 0 auto;
+
   padding-bottom: 31px;
   padding-top: 63px;
+  margin: 0;
 }
 
 .subtitle {
@@ -478,10 +482,14 @@ body {
 
 .head-sub {
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 
   padding-top: 94px;
   margin: 0;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .subscribe-button {
@@ -593,16 +601,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.main-sub {
-  background-image: url("/images/index/background.jpg");
-  width: 100%;
-  min-height: 417px;
-  background-color: #ffffff;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
 .main-inner {
   background-image: url("../images/catalog/Filter-back.jpg");
   width: 100%;
@@ -624,10 +622,12 @@ body {
 .main-sub {
   background-image: url("../images/index/background-sub.png");
   width: 100%;
-  min-height: 411px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  min-height: 417px;
   background-color: #ffffff;
+  color: #ffffff;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 /* Catalog.html */
