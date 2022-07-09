@@ -226,7 +226,7 @@
                   Применить
                 </button>
                 <button
-                  class="reset-button button-standart"
+                  class="reset-button button-lower"
                   type="reset"
                   name="reset"
                   value="Сбросить"
@@ -244,44 +244,43 @@
         <div class="catalog">
           <div class="select-container">
             <h2 class="search">Найдено гостиниц: 38</h2>
-
             <!--Селектор-->
             <select class="select-control" aria-label="Сортировка">
               <option value="cheep">Сначала дешевые</option>
             </select>
+            <div class="user-sort">
+              <a href="#" class="button-sort-active">
+                <span class="visually-hidden">Таблица</span>
+                <img
+                  class="breadcrumbs-item"
+                  src="/images/breadcrumbs/icon-table.svg"
+                  alt="Таблица."
+                  width="16"
+                  height="14"
+                />
+              </a>
+              <a href="#" class="button-sort-light">
+                <span class="visually-hidden">Большой список</span>
+                <img
+                  class="breadcrumbs-item"
+                  src="/images/breadcrumbs/icon-slideshow.svg"
+                  alt="Большой список."
+                  width="16"
+                  height="14"
+                />
+              </a>
 
-            <!-- <a href="#" class="button">
-              <span class="visually-hidden">Таблица</span>
-            </a>
-            <img
-              class="breadcrumbs-item"
-              src="/images/breadcrumbs/icon-table.svg"
-              alt="Таблица."
-              width="16"
-              height="14"
-            />
-
-            <a href="#" class="button button-light">
-              <span class="visually-hidden">Большой список</span>
-            </a>
-            <img
-              class="breadcrumbs-item"
-              src="/images/breadcrumbs/icon-slideshow.svg"
-              alt="Большой список."
-              width="16"
-              height="14"
-            />
-
-            <a href="#" class="button button-light">
-              <span class="visually-hidden">Список</span>
-            </a>
-            <img
-              class="breadcrumbs-item"
-              src="/images/breadcrumbs/icon-list.svg"
-              alt="Список"
-              width="16"
-              height="14"
-            /> -->
+              <a href="#" class="button-sort-light">
+                <span class="visually-hidden">Список</span>
+                <img
+                  class="breadcrumbs-item"
+                  src="/images/breadcrumbs/icon-list.svg"
+                  alt="Список"
+                  width="16"
+                  height="14"
+                />
+              </a>
+            </div>
           </div>
 
           <!--Карточки товаров-->
@@ -551,11 +550,11 @@
             <!--Селектор-->
             <div class="selector-container">
               <p class="selector-text">Гостиниц на странице:</p>
-              <select class="select-control" aria-label="Сортировка">
+              <select class="select-control-sort" aria-label="Сортировка">
                 <option class="number" value="cheep">1</option>
                 <option class="number" value="cheep">2</option>
                 <option class="number" value="cheep">3</option>
-                <option class="number" value="cheep">4</option>
+                <option class="number" value="cheep" selected>4</option>
               </select>
             </div>
           </div>

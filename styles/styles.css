@@ -567,10 +567,6 @@ body {
 
 /* Buttons transform */
 
-button {
-  text-transform: uppercase;
-}
-
 /* Buttons transform  end */
 
 /* Search hotel end */
@@ -778,8 +774,11 @@ button {
   text-transform: uppercase;
   color: #000000;
 
+  min-width: 338px;
+  min-height: 37px;
+
   margin: 0;
-  padding-left: 72px;
+  padding: 0;
 
   text-align: center;
 }
@@ -1113,15 +1112,56 @@ catalog-filter-item {
   border-radius: 4px;
 
   box-sizing: border-box;
-  min-width: 160px;
+  min-width: 290px;
   min-height: 49px;
 
   align-items: center;
   padding: 0 0 0 20px;
+  margin-left: 113px;
+
+  display: flex;
+  align-self: center;
+}
+
+.select-control-sort {
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+
+  box-sizing: border-box;
+  min-width: 160px;
+  min-height: 49px;
+
+  align-items: center;
+  padding: 14px 20px;
   margin: 0;
 
   display: flex;
   align-self: center;
+}
+
+.user-sort {
+  width: 160px;
+  height: 48px;
+
+  display: flex;
+}
+
+.button-sort-active {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-sort-light {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
@@ -1131,6 +1171,8 @@ catalog-filter-item {
   padding: 13px 12px 13px 12px;
   margin: 0;
   border: 0;
+
+  text-transform: uppercase;
 }
 
 .product-card-button {
@@ -1150,6 +1192,16 @@ catalog-filter-item {
 }
 
 .button-standart {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+}
+
+.button-lower {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -1193,11 +1245,13 @@ catalog-filter-item {
 .select-container {
   display: flex;
   align-items: center;
-  /* justify-content: space-around; */
+  justify-content: space-between;
 
   width: 1057px;
   min-height: 49px;
+  margin-left: 72px;
   margin-top: 50px;
+  gap: 78px;
 }
 
 .product-card-title {
