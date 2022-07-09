@@ -85,7 +85,7 @@
           >
             <!--Классы фильров-->
             <div class="catalog-filters">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group filter-first">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -125,13 +125,13 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group filter-second">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input-checked"
+                        class="control-input-circle"
                         type="radio"
                         name="product-group"
                         checked
@@ -143,7 +143,7 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="control-input-circle"
                         type="radio"
                         name="product-group"
                       />
@@ -154,7 +154,7 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="control-input-circle"
                         type="radio"
                         name="product-group"
                       />
@@ -166,23 +166,74 @@
 
               <!--сортировка по ценам-->
 
+              <fieldset class="cost">
+                <legend class="filter-headline">Стоимость, ₽:</legend>
+                <p class="cost__inputs">
+                  <label class="cost__label"
+                    >от
+                    <input
+                      class="cost__input"
+                      type="number"
+                      value="0"
+                      min="0"
+                      max="12000"
+                    />
+                  </label>
+                  <label class="cost__label"
+                    >до
+                    <input
+                      class="cost__input"
+                      type="number"
+                      value="9000"
+                      min="0"
+                      max="12000"
+                    />
+                  </label>
+                </p>
+                <p
+                  class="range-slider cost__range"
+                  style="--first-val: 0%; --second-val: 75%"
+                >
+                  <input
+                    class="range-slider__input"
+                    type="range"
+                    min="0"
+                    max="12000"
+                    value="0"
+                    step="100"
+                    aria-label="Min range"
+                  />
+                  <input
+                    class="range-slider__input"
+                    type="range"
+                    min="0"
+                    max="12000"
+                    value="9000"
+                    step="100"
+                    aria-label="Max range"
+                  />
+                </p>
+              </fieldset>
+
               <!--Кнопки-->
-              <button
-                class="submit-button button-standart"
-                type="submit"
-                name="submit"
-                value="Применить"
-              >
-                Применить
-              </button>
-              <button
-                class="reset-button button-standart"
-                type="reset"
-                name="reset"
-                value="Сбросить"
-              >
-                Сбросить
-              </button>
+              <menu class="filter-buttons">
+                <button
+                  class="submit-button button-standart"
+                  type="submit"
+                  name="submit"
+                  value="Применить"
+                >
+                  Применить
+                </button>
+                <button
+                  class="reset-button button-standart"
+                  type="reset"
+                  name="reset"
+                  value="Сбросить"
+                >
+                  Сбросить
+                </button>
+              </menu>
             </div>
           </form>
         </div>
