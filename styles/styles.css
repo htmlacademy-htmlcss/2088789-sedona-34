@@ -744,8 +744,6 @@ body {
   min-width: 1200px;
   min-height: 120px;
   margin: 0 auto;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .social-media-item {
@@ -2126,7 +2124,7 @@ catalog-filter-item {
 
 /* Subscridbe placeholder */
 
-.email-string aria-label {
+::placeholder {
   color: #000000;
   font-family: "PT Sans";
   font-style: normal;
