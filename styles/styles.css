@@ -811,10 +811,54 @@ body {
   margin: 0;
 }
 
+/* Phone tap*/
+
+.contacts-phone:hover {
+  color: #756157;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts-phone:focus {
+  color: #756157;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Phone tap */
+
 .academy-logo {
   width: 115px;
   height: 33px;
 }
+
+/* Logo bottom tap*/
+
+.academy-logo:hover {
+  color: #756157;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.academy-logo:focus {
+  color: #756157;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.academy-logo:active {
+  color: rgba(117, 97, 87, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Logo bottom tap */
 
 .academy-logotype {
   display: -webkit-box;
@@ -962,11 +1006,15 @@ body {
 }
 
 .reset-button {
-  width: 160px;
-  height: 48px;
+  width: 100px;
+  height: 32px;
 
   color: #ffffff;
   border: 0;
+
+  display: grid;
+  align-self: center;
+  justify-self: center;
 
   background-color: rgba(28, 28, 28, 0);
 }
@@ -1052,6 +1100,7 @@ body {
 
   padding: 0;
   margin: 0;
+  gap: 20px;
 }
 
 .filter-buttons > *:nth-child(1) {
@@ -1404,6 +1453,9 @@ catalog-filter-item {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
 }
 
 .button-sort-light {
@@ -1421,6 +1473,9 @@ catalog-filter-item {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
 }
 
 .button {
@@ -1471,9 +1526,11 @@ catalog-filter-item {
 .button-lower {
   font-family: "PT Sans";
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 20px;
+
+  text-decoration: none;
 }
 
 .product-card-button-detailed {
@@ -1608,6 +1665,15 @@ catalog-filter-item {
   padding: 20px;
 }
 
+.hotel-rait-stars {
+  display: flex;
+  align-self: center;
+}
+
+.stars:not(:last-child) {
+  margin-right: 6px;
+}
+
 .product-card-link {
   text-decoration: none;
 }
@@ -1679,12 +1745,15 @@ catalog-filter-item {
 
   line-height: 36px;
   font-weight: 700px;
+  font-size: 20px;
 
   text-decoration: none;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   color: #ffffff;
   background-color: #82b3d3;
+  border: 1px solid #82b3d3;
+  border-radius: 4px;
 }
 
 .pagination-current {
@@ -1696,10 +1765,16 @@ catalog-filter-item {
   height: 60px;
 
   text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   color: #000000;
   background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
 }
 
 .pagination-link-long {
@@ -1713,12 +1788,15 @@ catalog-filter-item {
 
   line-height: 36px;
   font-weight: 700px;
+  font-size: 20px;
 
   text-decoration: none;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   color: #ffffff;
   background-color: #82b3d3;
+  border: 1px solid #82b3d3;
+  border-radius: 4px;
 }
 
 .selector-container {
@@ -1791,3 +1869,272 @@ catalog-filter-item {
 /* Catalog sub end */
 
 /* Catalog.html end */
+
+/* Brown Buttons tap */
+
+.brown-button:hover {
+  background-color: #615048;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.brown-button:focus {
+  background-color: #615048;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.brown-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.brown-button:disabled {
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Brown Buttons tap end */
+
+/* Blue Buttons tap */
+
+.blue-button:hover {
+  background-color: #68a2ca;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blue-button:focus {
+  background-color: #68a2ca;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blue-button:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blue-button:disabled {
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Blue Buttons tap end */
+
+/* Green Buttons tap */
+
+.green-button {
+  background-color: #7db54f;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.green-button:hover {
+  background: #6c9e42;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.green-button:focus {
+  background: #6c9e42;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.green-button:active {
+  background: #7db54f;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.green-button:disabled {
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Green Buttons tap end */
+
+/* Pagination tap */
+
+.pagination-link:hover {
+  background: #68a2ca;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-link:focus {
+  background: #68a2ca;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-link:active {
+  background: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-link:disabled {
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Pagination long (10) */
+
+.pagination-link-long:hover {
+  background: #68a2ca;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-link-long:focus {
+  background: #68a2ca;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-link-long:active {
+  background: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-link-long:disabled {
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Pagination long (10) end */
+
+/* Pagiation current */
+
+.pagination-current:hover {
+  background: #f2f2f2;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-current:focus {
+  background: #f2f2f2;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-current:active {
+  background: #f2f2f2;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-current:disabled {
+  background: #f2f2f2;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Pagination current end */
+
+/* Pagination tap end */
+
+/* Breadcrubs tap */
+
+.button-sort-active:hover {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-sort-active:focus {
+  border: 2px solid #68a2ca;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-sort-active:active {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Breadcrubs tap */
+
+/* Social Media Buttons tap */
+
+.social-media-button:hover {
+  background: #68a2ca;
+}
+
+.social-media-button:focus {
+  background: #68a2ca;
+}
+
+.social-media-button:active {
+  background: rgba(104, 162, 202, 0.3);
+}
+/* Social Media Buttons tap end*/
+
+/* Button Reset tap */
+
+.button-lower:hover {
+  color: #ffffff;
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  text-align: center;
+}
+
+.button-lower:focus {
+  color: #ffffff;
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+
+  text-align: center;
+}
+
+.button-lower:active {
+  color: #ffffff;
+  opacity: 0.3;
+  text-align: center;
+}
+/* Button Reset tap end */
+
+/* Subscridbe placeholder */
+
+.email-string aria-label {
+  color: #000000;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  opacity: 0.6;
+}
+
+/* Subscribe placeholder */
