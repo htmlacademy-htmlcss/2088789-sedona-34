@@ -2473,13 +2473,8 @@ input::placeholder {
 }
 
 .modal-flex-container {
-  /* display: grid;
-  grid-row: column;
-  grid-template-columns: 155px 420px;
-  grid-template-rows: 50px 50px 29px 50px 50px 29px 50px 50px;
-
-  margin-top: 63px;
-  padding: 0; */
+  min-width: 575px;
+  min-height: 230px;
 
   display: flex;
   flex-direction: column;
@@ -2495,9 +2490,11 @@ input::placeholder {
 }
 
 .how-many-container {
-  display: flex;
+  min-width: 575px;
+  min-height: 50px;
 
-  justify-content: center;
+  display: flex;
+  justify-content: start;
 }
 
 /* Modal selector */
@@ -2511,6 +2508,18 @@ input::placeholder {
   border-radius: 4px;
 
   margin-left: 48px;
+  appearance: none;
+
+  background-image: url("../images/Vector-svg/calendar.svg");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: right 19px center;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .departure-date {
@@ -2522,33 +2531,62 @@ input::placeholder {
   border-radius: 4px;
 
   margin-left: 36px;
+  appearance: none;
+
+  background-image: url("../images/Vector-svg/calendar.svg");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: right 19px center;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .how-many {
   min-width: 133px;
   min-height: 50px;
-  margin-left: 64px;
-  padding: 18px 19px;
+  margin: 0 0 0 70px;
+  padding: 0;
+  /* padding: 15px 19px 14px 19px; */
 
   background: #f2f2f2;
   border-radius: 4px;
+  appearance: none;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .how-many-young {
   min-width: 133px;
   min-height: 50px;
-  margin: 0;
-  padding: 18px 19px;
+  margin: 0 0 0 43px;
+  padding: 0;
 
   background: #f2f2f2;
   border-radius: 4px;
-  margin-left: 43px;
+
+  position: relative;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 select {
   border: 0;
+}
+
+.how-many svg {
+  fill: #000000;
 }
 
 /* Modal selector end */
@@ -2583,8 +2621,8 @@ select {
   position: absolute;
   background: #83b3d3;
 
-  right: 210px;
-  bottom: 220px;
+  right: 222px;
+  bottom: 190px;
 }
 
 .modal-button-search {
@@ -2595,7 +2633,7 @@ select {
   border-radius: 10px;
   border: 0;
 
-  color: #e5e5e5;
+  color: #ffffff;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -2647,7 +2685,7 @@ select {
   line-height: 21px;
   color: #ff5757;
 
-  padding: 0;
+  padding: 0 0 11px 0;
   margin: 0;
   position: relative;
   left: 162px;
@@ -2661,13 +2699,13 @@ select {
   line-height: 21px;
   color: #333333;
 
-  padding: 0;
+  padding: 0 0 11px 0;
   margin: 0;
   position: relative;
   left: 162px;
 
   min-width: 420px;
-  min-height: 29px;
+  min-height: 21px;
 }
 
 .select-how-many {
@@ -2683,6 +2721,8 @@ select {
 
   display: flex;
   align-items: center;
+  min-width: 91px;
+  height: 50px;
 }
 
 .select-how-many-child {
@@ -2693,15 +2733,58 @@ select {
   line-height: 26px;
   color: #000000;
 
-  margin-left: 56px;
+  margin: 0 0 0 56px;
   padding: 0;
 
   display: flex;
+  align-items: center;
 
   min-width: 54px;
-  min-height: 50px;
+  height: 50px;
 }
 
 /* Modal title / text end */
 
-/* Modal end */
+/* Plus / Minus */
+
+.minus {
+  margin: 0 0 4px 0;
+}
+
+.minus-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+
+  width: 13px;
+  height: 13px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.plus {
+  margin: 0 5px 0 0;
+}
+
+.plus-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  width: 13px;
+  height: 13px;
+
+  /* position: absolute;
+  left: 105px;
+  top: 17px; */
+}
+/* Plus / Minus end */
+
+.number-persons {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
