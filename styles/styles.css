@@ -151,7 +151,11 @@ body {
   height: 100%;
 }
 
-.nav-item {
+/* .nav-item {
+  position: relative;
+} */
+
+nav-link {
   position: relative;
 }
 
@@ -159,19 +163,27 @@ body {
   position: absolute;
   width: 100%;
   height: 2px;
+  top: 45px;
 
-  border: 2px solid #756257;
   background-color: #756257;
 
   content: "";
+}
+
+a.nav-link.link-active {
+  position: relative;
+}
+
+a.nav-link.link-active-cat {
+  position: relative;
 }
 
 .link-active-cat::before {
   position: absolute;
   width: 100%;
   height: 2px;
+  top: 44px;
 
-  border: 2px solid #756257;
   background-color: #756257;
 
   content: "";
