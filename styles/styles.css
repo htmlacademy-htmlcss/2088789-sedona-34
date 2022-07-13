@@ -3,7 +3,7 @@
 @font-face {
   font-family: PT Sans;
   font-style: normal;
-  src: url("/fonts/ptsans-400.woff2");
+  src: url("../fonts/ptsans-400.woff2");
   font-display: swap;
 }
 
@@ -11,7 +11,7 @@
   font-family: PT Sans;
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2");
+  src: url("../fonts/ptsans-700.woff2");
   font-display: swap;
 }
 
@@ -151,26 +151,28 @@ body {
   height: 100%;
 }
 
+.nav-item {
+  position: relative;
+}
+
 .link-active::before {
   position: absolute;
-  width: 68px;
-  height: 0;
-  left: 260px;
-  top: 65px;
+  width: 100%;
+  height: 2px;
 
   border: 2px solid #756257;
+  background-color: #756257;
 
   content: "";
 }
 
 .link-active-cat::before {
   position: absolute;
-  width: 93px;
-  height: 0;
-  left: 482px;
-  top: 65px;
+  width: 100%;
+  height: 2px;
 
   border: 2px solid #756257;
+  background-color: #756257;
 
   content: "";
 }
@@ -750,8 +752,6 @@ body {
 
 .email-string {
   background: #f2f2f2;
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px 0 0 10px;
 
   border: 0;
@@ -770,30 +770,45 @@ body {
 
 /* Footer */
 
-/* Social media icons */
+/* Social media tap */
 
-.footer-social-vk {
-  background-image: url("../images/Vector-svg/VK.svg");
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  background-position: center;
+.footer-social-vk path:hover {
+  fill: #68a2ca;
 }
 
-.footer-social-tg {
-  background-image: url("../images/Vector-svg/TG.svg");
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  background-position: center;
+.footer-social-vk path:focus {
+  fill: #68a2ca;
 }
 
-.footer-social-ut {
-  background-image: url("../images/Vector-svg/UT.svg");
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  background-position: center;
+.footer-social-vk path:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
-/* Social media icons end */
+.footer-social-tg path:hover {
+  fill: #68a2ca;
+}
+
+.footer-social-tg path:focus {
+  fill: #68a2ca;
+}
+
+.footer-social-tg path:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.footer-social-ut path:hover {
+  fill: #68a2ca;
+}
+
+.footer-social-ut path:focus {
+  fill: #68a2ca;
+}
+
+.footer-social-ut path:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+/* Social media tap end */
 
 .page-footer {
   display: -webkit-box;
@@ -850,12 +865,6 @@ body {
   display: -ms-flexbox;
 
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
 
   min-width: 183px;
   min-height: 40px;
@@ -888,6 +897,11 @@ body {
   margin: 0;
 }
 
+.academy-logotype {
+  display: flex;
+  align-items: center;
+}
+
 /* Phone tap*/
 
 .contacts-phone:hover {
@@ -910,26 +924,19 @@ body {
 
 /* Phone tap */
 
-.academy-logo {
-  width: 115px;
-  height: 33px;
-}
-
 /* Logo bottom tap*/
-
-/* Logo bottom tap */
-
-.academy-logotype {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-
-  margin: 0;
-  padding: 0;
+.academy-logotype path:hover {
+  fill: #756157;
 }
+
+.academy-logotype path:focus {
+  fill: #756157;
+}
+
+.academy-logotype path:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+/* Logo bottom tap */
 
 .social-media-item:nth-child(3n) {
   margin-right: 10px;
@@ -1028,7 +1035,7 @@ body {
 
   text-align: left;
   margin: 0;
-  padding: 35px 0 0 70px;
+  padding: 35px 0 10px 70px;
 }
 
 .search {
@@ -2045,6 +2052,24 @@ catalog-filter-item {
 
 /* Brown Buttons tap */
 
+.brown-button {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+
+  text-transform: uppercase;
+}
+
+brown-button-mini {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .brown-button:hover {
   background-color: #615048;
   text-align: center;
@@ -2065,6 +2090,33 @@ catalog-filter-item {
 }
 
 .brown-button:disabled {
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Brown Buttons mini */
+.brown-button-mini:hover {
+  background-color: #615048;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.brown-button-mini:focus {
+  background-color: #615048;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.brown-button-mini:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.brown-button-mini:disabled {
   background-color: #e5e5e5;
   color: rgba(255, 255, 255, 0.3);
   text-align: center;
