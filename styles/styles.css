@@ -835,6 +835,8 @@ a.nav-link.link-active-cat {
   min-height: 120px;
   margin: 0 auto;
 
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -910,7 +912,11 @@ a.nav-link.link-active-cat {
 }
 
 .academy-logotype {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1090,8 +1096,12 @@ a.nav-link.link-active-cat {
   color: #ffffff;
   border: 0;
 
+  display: -ms-grid;
+
   display: grid;
+  -ms-grid-row-align: center;
   align-self: center;
+  -ms-grid-column-align: center;
   justify-self: center;
 
   background-color: rgba(28, 28, 28, 0);
@@ -1105,6 +1115,10 @@ a.nav-link.link-active-cat {
   height: 21px;
 
   position: relative;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
 
   display: flex;
   gap: 19px;
@@ -1125,8 +1139,16 @@ a.nav-link.link-active-cat {
   background: #ffffff;
   border-radius: 4px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1331,6 +1353,13 @@ a.nav-link.link-active-cat {
 .range-slider {
   margin: 0;
   width: 100%;
+  background-image: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.3) var(--first-val),
+    #fff var(--first-val),
+    #fff var(--second-val),
+    rgba(255, 255, 255, 0.3) var(--second-val)
+  );
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -1339,13 +1368,6 @@ a.nav-link.link-active-cat {
     color-stop(#fff),
     color-stop(#fff),
     to(rgba(255, 255, 255, 0.3))
-  );
-  background-image: -o-linear-gradient(
-    left,
-    rgba(255, 255, 255, 0.3) var(--first-val),
-    #fff var(--first-val),
-    #fff var(--second-val),
-    rgba(255, 255, 255, 0.3) var(--second-val)
   );
   background-image: linear-gradient(
     to right,
@@ -1455,6 +1477,10 @@ a.nav-link.link-active-cat {
   margin: 0;
   padding: 0;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
 }
 
@@ -1476,8 +1502,15 @@ a.nav-link.link-active-cat {
 
   list-style: none;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-line-pack: center;
   align-content: center;
   /* gap: 10px; */
 }
@@ -1493,7 +1526,12 @@ a.nav-link.link-active-cat {
   background-repeat: no-repeat;
   background-position: center;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
@@ -1530,8 +1568,16 @@ a.nav-link.link-active-cat {
   width: 25px;
   height: 21px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -1587,6 +1633,8 @@ catalog-filter-item {
   background-image: url("../images/Vector-svg/select-arrov.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
@@ -1620,6 +1668,8 @@ catalog-filter-item {
   background-image: url("../images/Vector-svg/select-arrov.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
@@ -1857,7 +1907,11 @@ catalog-filter-item {
 }
 
 .hotel-rait-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 
@@ -2321,9 +2375,6 @@ brown-button-mini {
 
 /* Social Media Buttons tap */
 
-.footer-social-vk:hover {
-}
-
 /* Social Media Buttons tap end*/
 
 /* Button Reset tap */
@@ -2354,6 +2405,58 @@ brown-button-mini {
 /* Button Reset tap end */
 
 /* Subscridbe placeholder */
+
+input::-webkit-input-placeholder {
+  color: #000000;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  opacity: 0.6;
+
+  padding-left: 22px;
+}
+
+input::-moz-placeholder {
+  color: #000000;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  opacity: 0.6;
+
+  padding-left: 22px;
+}
+
+input:-ms-input-placeholder {
+  color: #000000;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  opacity: 0.6;
+
+  padding-left: 22px;
+}
+
+input::-ms-input-placeholder {
+  color: #000000;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  opacity: 0.6;
+
+  padding-left: 22px;
+}
 
 input::placeholder {
   color: #000000;
@@ -2414,8 +2517,16 @@ input::placeholder {
   position: absolute;
   background: #ffffff;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -2453,6 +2564,10 @@ input::placeholder {
   width: 100%;
   height: 100%;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
 }
 
@@ -2468,6 +2583,8 @@ input::placeholder {
   min-width: 715px;
   min-height: 561px;
 
+  -webkit-box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
@@ -2476,16 +2593,27 @@ input::placeholder {
   min-width: 575px;
   min-height: 230px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding-top: 63px;
 }
 
 .arrival-date-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .departure-date-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -2493,7 +2621,13 @@ input::placeholder {
   min-width: 575px;
   min-height: 50px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
 
   position: relative;
@@ -2510,6 +2644,8 @@ input::placeholder {
   border-radius: 4px;
 
   margin-left: 48px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 
   background-image: url("../images/Vector-svg/calendar.svg");
@@ -2533,6 +2669,8 @@ input::placeholder {
   border-radius: 4px;
 
   margin-left: 36px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 
   background-image: url("../images/Vector-svg/calendar.svg");
@@ -2556,12 +2694,22 @@ input::placeholder {
 
   background: #f2f2f2;
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 
   position: relative;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 30px;
 }
@@ -2577,8 +2725,16 @@ input::placeholder {
 
   position: relative;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 30px;
 }
@@ -2670,11 +2826,17 @@ select {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-transform: capitalize;
 
   margin: 0;
   padding: 0;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
 
   display: flex;
 }
@@ -2687,10 +2849,21 @@ select {
   line-height: 21px;
   color: #ff5757;
 
+  min-width: 420px;
+  min-height: 29px;
+
   padding: 0 0 11px 0;
   margin: 0;
   position: relative;
   left: 162px;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .departure-description {
@@ -2721,7 +2894,13 @@ select {
   margin: 0;
   padding: 0;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-width: 91px;
   height: 50px;
@@ -2738,7 +2917,13 @@ select {
   margin: 0 0 0 56px;
   padding: 0;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   min-width: 54px;
@@ -2847,6 +3032,8 @@ select {
 
   margin-bottom: 6px;
   margin-top: 15px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 1;
   display: none;
@@ -2952,3 +3139,9 @@ select {
 }
 
 /* Choise date end */
+
+/* Modal container close */
+
+.modal-container-close {
+  display: none;
+}
