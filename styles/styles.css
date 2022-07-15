@@ -2881,7 +2881,7 @@ select {
   padding: 0 0 11px 0;
   margin: 0;
   position: relative;
-  left: 162px;
+  left: 155px;
 
   display: -webkit-box;
 
@@ -2903,7 +2903,7 @@ select {
   padding: 0 0 11px 0;
   margin: 0;
   position: relative;
-  left: 162px;
+  left: 155px;
 
   min-width: 420px;
   min-height: 21px;
@@ -2961,22 +2961,35 @@ select {
 /* Plus / Minus */
 
 .minus {
-  margin: 0 0 4px 0;
+  margin: 0;
+
+  position: absolute;
+  bottom: 8px;
+  left: 4px;
 }
 
 .minus-button {
   background-color: rgba(0, 0, 0, 0);
   border: 0;
 
-  width: 13px;
-  height: 13px;
+  width: 20px;
+  height: 20px;
 
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .plus {
-  margin: 0 5px 0 0;
+  margin: 0;
+
+  position: absolute;
+  bottom: 3px;
+  left: 4px;
+}
+
+.plus-sec {
+  margin: 0;
 }
 
 .plus-button {
@@ -2985,8 +2998,10 @@ select {
   margin: 0;
   padding: 0;
 
-  width: 13px;
-  height: 13px;
+  width: 20px;
+  height: 20px;
+
+  position: relative;
 
   /* position: absolute;
   left: 105px;
@@ -3170,4 +3185,36 @@ select {
 
 .modal-container-close {
   display: none;
+}
+
+/* buttons plus minus */
+
+.minus-button svg:hover {
+  fill: #000000;
+}
+
+.minus-button svg:focus {
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+  fill: #000000;
+}
+
+.minus-button svg:active {
+  fill: #000000;
+  opacity: 0.2;
+}
+
+.plus-button svg:hover {
+  fill: #000000;
+}
+
+.plus-button svg:focus {
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+  fill: #000000;
+}
+
+.plus-button svg:active {
+  fill: #000000;
+  opacity: 0.2;
 }
